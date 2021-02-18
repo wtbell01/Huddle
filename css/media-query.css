@@ -1,0 +1,420 @@
+/* Media query 885px - Line 7 */
+/* Media query 700px - Line 162 */
+/* Media query 578px - Line 232 */
+/* Media query 415px - Line 272*/
+/* Media query 320px - Line 357*/
+
+@media(max-width: 885px){
+  /* Header - increased width */
+  .header{
+    width: 92%;
+  }
+  
+  /* The header text on the left side of hero content */
+  .hero-content-container__left-header{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content-container__left-paragraph{
+    font-size: .95rem;
+    line-height: 1.68rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content-container__left-button{
+    font-size: 0.75rem;
+    line-height: 1.18rem;
+    padding: 1.06rem 3rem;
+  }
+
+  /* Right side of hero content holding an image */
+  .hero-content-container__right{
+    height: 60vh;
+    width: 52%;
+  }
+
+
+  /* Features */
+
+  /* Features container */
+  .features-container{
+    width: 70%;
+  }
+
+  /* Features - decreased padding on each box*/
+  .features-box{
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+  }
+  
+  /* Flex box container - set flex direction to column */
+  .features-box__container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  /* Column reverse on feature box - puts image above text */
+  .features-box-container-flip{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .features-box-text-container{
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .features-box-text-container__header{
+    font-size: 1.5rem;
+    line-height: 2.32rem;
+    margin-bottom: 1rem;
+  }
+  
+  .features-box-text-container__paragraph{
+    font-size: 1rem;
+    line-height: 1.688rem;
+  }
+  
+  /* Re-size image and add margin to bottom */
+  .features-box-image-container{
+    height: 14rem;
+    width: 50%;
+    margin: 0 auto 3rem auto;
+  }
+
+
+
+  /* Call to action */
+  .call-to-action{
+    width: 50%;
+    padding: 3.43rem 0;
+  }
+
+  .call-to-action__header{
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .call-to-action__button{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 1rem 3rem;
+  }
+
+  /* Footer */
+  .footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10rem 0 2.75rem 0;
+  }
+
+  /* Individual boxes in footer */
+  .footer-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+  }
+
+  .footer-box-1, .footer-box-2, .footer-box-3,
+  .footer-box-4{
+    width: 100%;
+  }
+  
+  .footer-box-4{
+    margin-bottom: 0;
+  }
+
+  .footer-box__information-container{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /* Icon container for icons in footer box 1 */
+  .information-icon-container{
+    height: 1.2rem;
+    width: 3.5%;
+    margin-right: 1rem;
+  }
+
+  /* Container holding social icons and copyright in footer box 4 */
+  .footer-box__social-copyright-container{
+    text-align: center;
+  }
+
+  /* Copyright text in footer box 4 */
+  .footer-copyright-container-text{
+    margin-top: 1.5rem;
+  }
+}
+
+
+
+/* Media Query - 700 px */
+@media(max-width: 700px){
+  /* Hero content */
+  .hero-content-container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  /* Header logo */
+  .header__logo-container{
+    height: 1.75rem;
+    width: 9.5rem;
+  }
+
+  /* Header button */
+  .header__button{
+    font-size: .85rem;
+    padding: 0.5rem 1.75rem;
+  }
+
+  /*Top of hero content holding text*/
+  .hero-content-container__left{
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Header text inside the hero content container */
+  .hero-content-container__left-header{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-content-container__left-paragraph{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-content-container__left-button{
+    font-size: .8rem;
+    line-height: 1.18rem;
+    padding: 0.75rem 2rem;
+  }
+
+  /* Bottom part of hero content holding the image */
+  .hero-content-container__right{
+    height: 40vh;
+    width: 50%;
+    margin: 2rem auto 0 auto;
+  }
+
+
+  /* Call to action */
+  .call-to-action__header{
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  .call-to-action__button{
+    font-size: .8rem;
+    line-height: 1.2rem;
+    padding: 1rem 2rem;
+  }
+  
+}
+
+
+/* Media Query - 578px */
+@media(max-width:578px){
+  /* Header */
+  .header{
+    top: 1.7rem;
+  }
+
+  /* Header logo */
+  .header__logo-container{
+    height: 1.5rem;
+    width: 8rem;
+  }
+
+  /* Header button */
+  .header__button{
+    font-size: .75rem;
+    padding: 0.35rem 1.25rem;
+  }
+
+  /* Hero content */
+  .hero-content-container{
+    top: 6.5rem; 
+  }
+  
+  /* Header text inside the hero content container */
+  .hero-content-container__left-header{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.65rem;
+  }
+
+  /* Bottom part of hero content holding the image */
+  .hero-content-container__right{
+    margin: 2rem auto 0 auto;
+  }
+
+}
+
+
+
+/* Media Query - 415px */
+@media(max-width: 415px){
+  /* Hero content */
+  .hero-content-container{
+    top: 8.5rem; 
+  }
+  
+  /* Header in the hero */
+  .hero-content-container__left-header{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Paragraph text inside the hero content container */
+  .hero-content-container__left-paragraph{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-content-container__left-button{
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: 0.875rem 3rem;
+  }
+
+  /* Bottom part of hero content holding the image */
+  .hero-content-container__right{
+    height: 30vh;
+    width: 85%;
+    margin: 3rem auto 0 auto;
+  }
+
+   
+
+  /* Call to action */
+  .call-to-action{
+    width: 90%;
+  }
+
+  .call-to-action__header{
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .call-to-action__button{
+    font-size: 0.625rem;
+    line-height: 1rem;
+    padding: 1rem 2rem;
+  }
+
+
+  
+  /* Features container */
+  .features-container{
+    width: 85%;
+  }
+
+  .features-box-text-container{
+    width: 85%;
+  }
+
+  .features-box-text-container__header{
+    font-size: 1.25rem;
+    line-height: 1.87rem;
+  }
+  
+  .features-box-text-container__paragraph{
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+  }
+  
+  /* Re-size image and add margin to bottom */
+  .features-box-image-container{
+    height: 16rem;
+    width: 77%;
+    margin: 0 auto 1.5rem auto;
+  }
+  
+}
+
+
+
+/* Media query - 320px */
+@media(max-width: 320px){
+  /* Header logo */
+  .header__logo-container{
+    height: 1.25rem;
+    width: 6.5rem;
+  }
+  
+  /* Header in the hero */
+  .hero-content-container__left-header{
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .hero-content-container__left-paragraph{
+    font-size: 0.85rem;
+  }
+
+  .hero-content-container__left-button{
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: 0.65rem 3rem;
+  }
+
+  /* Bottom part of hero content holding the image */
+  .hero-content-container__right{
+    height: 28vh;
+    width: 83%;
+    margin: 2.5rem auto 0 auto;
+  }
+
+
+  
+  /* Features box text container */
+  .features-box-text-container{
+    width: 85%;
+  }
+
+  .features-box-text-container__header{
+    font-size: 1.05rem;
+  }
+  
+  .features-box-text-container__paragraph{
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+  
+  /* Re-size image and add margin to bottom */
+  .features-box-image-container{
+    height: 13rem;
+    width: 77%;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .call-to-action__header{
+    font-size: 1rem;
+  }
+
+  .call-to-action__button{
+    font-size: 0.7rem;
+    line-height: 1rem;
+    padding: 1rem 2rem;
+  }
+  
+}

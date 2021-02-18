@@ -1,0 +1,404 @@
+/* Poppins and Open Sans font import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark-cyan);
+}
+
+/* Colors */
+:root{
+  --white: #FFFFFF;
+  --dark-grey: #979797;
+  --grey: #808E9A;
+  --pink: #ff52bf;
+  --light-pink:#FF9ADB;
+  --pale-cyan: #ebfbff;
+  --dark-cyan: #00252e;
+  --light-cyan: #e4f7ff;
+  --greyish-blue: #808d99;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Links */
+a{
+  text-decoration: none;
+}
+
+/* List items */
+li{
+  list-style: none;
+}
+
+/* Button colors - White button */
+.white-button{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.white-button:hover{
+  color: var(--grey);
+}
+
+/* Button colors - Pink button */
+.pink-button{
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+
+.pink-button:hover{
+  background-color: var(--light-pink);
+}
+
+/* Hero background */
+.hero-background{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.hero-background__image{
+  height: 100%;
+  width: 100%;
+  background-color: var(--light-cyan);
+}
+
+/* Header */
+.header{
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Header logo container */
+.header__logo-container{
+  height: 2rem;
+  width: 12.5rem;
+}
+
+.header__logo-container__image{
+  height: 100%;
+  width: 100%;
+}
+
+/* Header button */
+.header__button{
+  font-weight: 700;
+  padding: 0.875rem 4rem;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.09);
+  border-radius: 24px;
+}
+
+/* Hero content */
+.hero-content-container{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 8.75rem;
+  left: 0;
+  right: 0;
+}
+
+/* Left side of hero content */
+.hero-content-container__left{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content-container__left-header{
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content-container__left-paragraph{
+  font-size: 1.12rem;
+  line-height: 1.68rem;
+  margin-bottom: 2rem;
+}
+
+/* Adds a pointer cursor on the button container in the hero */
+.hero-content-container__left-button-container{
+  cursor: pointer;
+}
+
+/* Button/link on the left side of the hero */
+.hero-content-container__left-button{
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.18rem;
+  padding: 1.06rem 4.3rem;
+  border-radius: 28px;
+  box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.16);
+}
+
+/* Right side of hero content */
+.hero-content-container__right{
+  height: 66vh;
+  width: 48%;
+}
+
+/* Image on right side of hero content */
+.hero-content-container__right-image{
+  height: 100%;
+  width: 100%;
+}
+
+/* Background for features section */
+.features-background{
+  background-color: var(--white);
+}
+
+/* Features container */
+.features-container{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 3rem auto;
+}
+
+/* Individual feature boxes - Creates the border for each feature box */
+.features-box{
+  box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  padding: 3.3rem 0 3.3rem 5rem;
+}
+
+/* Flex box container that puts the image on one side and text on the other */
+.features-box__container{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Container for text content inside each feature box */
+.features-box-text-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-box-text-container__header{
+  font-size: 1.75rem;
+  line-height: 2.62rem;
+  margin-bottom: 1rem;
+}
+
+.features-box-text-container__paragraph{
+  font-size: 1.125rem;
+  line-height: 1.688rem;
+  color: var(--grey);
+  font-weight: 400;
+}
+
+/* Container for feature box image */
+.features-box-image-container{
+  height: 20rem;
+  width: 45%;
+}
+
+.features-box-image-container__image{
+  height: 100%;
+  width: 100%;
+}
+
+/* Call to action */
+.call-to-action{
+  background-color: var(--white);
+  z-index: 2;
+  position: relative;
+  top: 5rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3.43rem 0;
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+}
+
+.call-to-action__header{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 3.75rem;
+  padding: 0 0.75rem;
+}
+
+.call-to-action__button{
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  border-radius: 40px;
+  box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.22);
+  padding: 1.56rem 6.25rem;
+}
+
+/* Footer background */
+.footer-background{
+  background-color: var(--dark-cyan);
+  color: var(--white);
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10rem 0 5rem 0;
+}
+
+/* Individual boxes in footer */
+.footer-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box-1{
+  width: 35%;
+}
+
+.footer-box-2,
+.footer-box-3{
+  width: 15%;
+  margin-top: 4.9rem;
+}
+
+.footer-box-4{
+  width: 25%;
+  margin-top: 5rem;
+}
+
+/* Huddle logo in box 1 */
+.footer-box__logo-container{
+  height: 2rem;
+  width: 9.75rem;
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+
+/* Huddle logo */
+.footer-box__logo-container__image{
+  height: 100%;
+  width: 100%;
+  color: var(--white);
+}
+
+/* Container for icon and information in footer box 1 */
+.footer-box__information-container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+/* Icon container in footer box 1 */
+.information-icon-container{
+  height: 1rem;
+  width: 5%;
+}
+
+/* Icon in footer box 1 */
+.information-icon-container__icon{
+  height: 100%;
+  width: 100%;
+}
+
+/* Information container in footer box 1 */
+.information-container{
+  width: 90%;
+}
+
+/* Information text in footer box 1 */
+.information-container__text{
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  
+}
+
+/* Footer box list in box 2 and 3 */
+.footer-box__list{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer box list items in box 2 and 3 */
+.footer-box__list__list-item{
+  font-size: 0.875rem;
+  line-height: 1.7rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Footer box links in box 2 and 3 */
+.footer-box__list__link{
+  color: var(--white);
+}
+
+.footer-box__list__link:hover{
+  border-bottom: solid var(--white) thin;
+}
+
+/* Container holding social icons and copyright text in footer box 4 */
+.footer-box__social-copyright-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* The link/anchor containing each social icon in footer box 4 */
+.footer-social-link{
+  color: var(--white);
+}
+
+/* Social icons in footer box 4 */
+.footer-box__social-copyright-container .fab{
+  font-size: 1.15rem;
+  border: solid var(--white) thin;
+  border-radius: 50%;
+  padding: .5rem .65rem;
+  margin-right: 0.75rem;
+}
+
+.footer-box__social-copyright-container .fab:hover{
+  color: var(--pink);
+  border: solid var(--pink) thin;
+}
+
+/* Copyright text in footer box 4 */
+.footer-copyright-container-text{
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+
+
+
+
+
